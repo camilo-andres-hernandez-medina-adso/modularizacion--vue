@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="sp">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="app.js" type="module" defer></script>
+</head>
+<body style="color: aqua;"  class="m-5">
+    <h1 >uwu</h1>
+    <form id="myForm">
+        <clabel class="my-2 d-block">Escoja una nota</clabel>
+        <label>Taditional</label>
+        <input type="radio" name="eleccion" value="Taditional">
+        <label>SBG-Rating</label>
+        <input type="radio" name="eleccion" value="SBG-Rating"><br>
+        <input type="number" name="numero" pattern="[0-9]+" placeholder="Ingrese su numero" class="my-2">
+        <input type="submit" value="enviar">
+    </form>
+    
+    <table>
+        <thead class="v-100">
+            <tr class="m-5">
+                <th class="px-3 border">Traditional</th>
+                <th class="px-3 border">PointRange</th>
+                <th class="px-3 border">Letter</th>
+                <th class="px-3 border">SBGRating</th>
+                <th class="px-3 border">ProficiencyLevelWithStandard</th>
+            </tr>
+        </thead>
+        <tbody id="myTabla" class="text-center">
+        </tbody>
+    </table>
+</body>
+</html>
